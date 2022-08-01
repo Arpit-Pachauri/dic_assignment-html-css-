@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>School Web Template</title>
+    <title>College Web Template</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    
 </head>
 
 <body>
@@ -99,33 +101,33 @@
         <main class="main">
             <div class="container">
                 <div class="title">Registration</div>
-                <form action="#">
+                <form action="#" name="form" onsubmit="return validateForm()">
                     <div class="user-details">
                         <div class="input-box">
                             <span class="details">Full Name</span>
-                            <input type="text" placeholder="Enter your name">
+                            <input type="text" name="name" placeholder="Enter your name">
                         </div>
                         <div class="input-box">
                             <span class="details">Username</span>
-                            <input type="text" placeholder="Enter your username">
+                            <input type="text" name="username" placeholder="Enter your username">
                         </div>
                         <div class="input-box">
                             <span class="details">Email</span>
-                            <input type="text" placeholder="Enter your Email">
+                            <input type="text" name="email" placeholder="Enter your Email">
                         </div>
                         <div class="input-box">
                             <span class="details">Phone Number</span>
-                            <input type="text" placeholder="Enter your Phone-number">
+                            <input type="text" name="number" placeholder="Enter your Phone-number">
                         </div>
                         <div class="input-box">
                             <span class="details">Password</span>
-                            <input type="text" placeholder="Enter your Password">
+                            <input type="text" name="password" placeholder="Enter your Password">
                         </div>
                     </div>
                     <div class="gender-details">
-                        <input type="radio" name="gender" id="dot-1">
-                        <input type="radio" name="gender" id="dot-2">
-                        <input type="radio" name="gender" id="dot-3">
+                        <input type="radio" name="gender" value="male" id="dot-1">
+                        <input type="radio" name="gender" value="female" id="dot-2">
+                        <input type="radio" name="gender" value="Other" id="dot-3">
                         <span class="gender-title">Gender</span>
                         <div class="category">
                             <label for="dot-1">
@@ -148,7 +150,6 @@
                 </form>
             </div>
         </main>
-        <!--END OF SHOWCASE-->
         <div class="campus">
             <h2>Campous tour of UIET</h2>
             <iframe class="vd" width="500" height="315" src="https://www.youtube.com/embed/mIewXo41ynk"
@@ -158,6 +159,110 @@
             <h3>Information about Faculty(UIET)</h3>
             <a class="facu" href="http://nbauiet.puchd.ac.in/facultyinfo.htm" target="_blank">Click here</a>
 
+        </div>
+    </div>
+    <div class="faq-body">
+        <div class="scontainer">
+            <h1 class="title">
+                Frequenty Asked Questions
+            </h1>
+            <main class="accordion">
+                <div class="faq-img">
+                    <img src="faq.svg" alt="" class="accordion-img">
+                </div>
+                <div class="content-accordion">
+                    <div class="question-answer">
+                        <div class="question">
+                            <h3 class="title-question">
+                                How much fee I have to deposit?
+                            </h3>
+                            <button class="question-btn">
+                                <span class="up-icon">
+                                    <i class="fas fa-chevron-up"></i>
+                                </span>
+                                <span class="down-icon">
+                                    <i class="fas fa-chevron-down"></i>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="answer">
+                            <p>Please follow link ‘Home-> Fee Details and Important Dates’ for getting your fee details.</p>
+                        </div>
+                    </div>
+                    <div class="question-answer">
+                        <div class="question">
+                            <h3 class="title-question">
+                                I am a USOL/Department/College student then why I should select ‘Student Type’ as private?
+                            </h3>
+                            <button class="question-btn">
+                                <span class="up-icon">
+                                    <i class="fas fa-chevron-up"></i>
+                                </span>
+                                <span class="down-icon">
+                                    <i class="fas fa-chevron-down"></i>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="answer">
+                            <p> A Reappear/deficient/Additional/Improvement exam is always given as Private Student.</p>
+                        </div>
+                    </div>
+                    <div class="question-answer">
+                        <div class="question">
+                            <h3 class="title-question">
+                                I am not able to deposit fee in Bank as they said ‘your record not found’?
+                            </h3>
+                            <button class="question-btn">
+                                <span class="up-icon">
+                                    <i class="fas fa-chevron-up"></i>
+                                </span>
+                                <span class="down-icon">
+                                    <i class="fas fa-chevron-down"></i>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="answer">
+                            <p>. Download Post Office challan and submit your fees in Post Office.</p>
+                        </div>
+                    </div>
+                    <div class="question-answer">
+                        <div class="question">
+                            <h3 class="title-question">
+                                I am not able to upload my Photo & Signature?
+                            </h3>
+                            <button class="question-btn">
+                                <span class="up-icon">
+                                    <i class="fas fa-chevron-up"></i>
+                                </span>
+                                <span class="down-icon">
+                                    <i class="fas fa-chevron-down"></i>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="answer">
+                            <p>Reduce size of your Photo & Signature upto less than 100KB, then try again to upload.</p>
+                        </div>
+                    </div>
+                    <div class="question-answer">
+                        <div class="question">
+                            <h3 class="title-question">
+                                I am unable to download my Admit Card.
+                            </h3>
+                            <button class="question-btn">
+                                <span class="up-icon">
+                                    <i class="fas fa-chevron-up"></i>
+                                </span>
+                                <span class="down-icon">
+                                    <i class="fas fa-chevron-down"></i>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="answer">
+                            <p> If you are a private/USOL student then login into your account with your username and password, and download your admit card. .</p>
+                        </div>
+                    </div>
+                </div>
+            </main> 
         </div>
     </div>
 <footer>
@@ -181,6 +286,8 @@
 </footer>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="main.js">
+    console.log("yes");
+</script>
 </body>
-
 </html>
